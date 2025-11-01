@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Noppanat Wadlom — Personal Site</title>
+    <meta
+      name="description"
+      content="Ph.D. student in Computer Science at NUS. Research in machine learning systems, big data systems, and agentic AI."
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-content">
+        <!-- Replace intro block: add avatar and wrap text -->
+        <div class="intro">
+          <img
+            class="avatar"
+            src="assets/profile.jpg"
+            alt="Portrait of Noppanat Wadlom"
+            width="72"
+            height="72"
+            loading="eager"
+          />
+          <div>
+            <h1 class="name">Noppanat Wadlom</h1>
+            <p class="tagline">
+              Ph.D. Student · Computer Science · National University of
+              Singapore<br />
+              Machine Learning Systems · Big Data Systems · Agentic AI
+            </p>
+          </div>
+        </div>
+
+        <!-- Group nav and theme toggle -->
+        <div class="tools">
+          <nav class="nav" aria-label="Primary">
+            <a href="#about">About</a>
+            <a href="#education">Education</a>
+            <a href="#experience">Experience</a>
+            <a href="#pubs">Publications</a>
+            <a href="#awards">Awards</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+          </nav>
+          <button
+            id="theme-toggle"
+            class="theme-toggle"
+            type="button"
+            aria-pressed="false"
+            aria-label="Toggle theme"
+            title="Toggle theme"
+          >
+            <span class="icon-sun" aria-hidden="true">☀️</span>
+            <span class="icon-moon" aria-hidden="true">🌙</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main class="container main-content">
+      <section id="about" class="section-block">
+        <h2>About</h2>
+        <p>
+          I am a Ph.D. student in Computer Science at the National University of
+          Singapore (NUS), supported by the President’s Graduate Fellowship. My
+          research interests include machine learning systems, big data systems,
+          and agentic AI, with a focus on how to execute complex multi-step /
+          multi-agent LLM workflows efficiently on modern hardware.
+        </p>
+        <p>
+          Before NUS, I completed a B.Sc. in Computer Science (double major in
+          Electrical Engineering) at KAIST with a 4.20/4.30 GPA. My applied work 
+          also includes causal modeling for banking analytics and production ML 
+          pipelines.
+        </p>
+      </section>
+
+      <section id="education" class="section-block">
+        <h2>Education</h2>
+
+        <!-- NUS -->
+        <div class="item">
+          <div class="item-head">
+            <div class="item-title">
+              National University of Singapore (NUS) — Ph.D. in Computer Science
+            </div>
+            <div class="item-date">Aug 2024 – Present · Singapore</div>
+          </div>
+          <div class="item-desc">
+            Ph.D. in Computer Science.
+            President’s Graduate Fellowship (full support for exceptional research promise).
+            Research focus: high-throughput LLM serving, workflow-aware scheduling, cache reuse across agentic steps.
+          </div>
+        </div>
+
+        <!-- KAIST BSc -->
+        <div class="item">
+          <div class="item-head">
+            <div class="item-title">
+              Korea Advanced Institute of Science and Technology (KAIST) — B.Sc. in Computer Science
+            </div>
+            <div class="item-date">Aug 2020 – Aug 2024 · Daejeon, South Korea</div>
+          </div>
+          <div class="item-desc">
+            B.Sc. in Computer Science with a double major in Electrical Engineering.
+            Semiminor in Artificial Intelligence.
+            GPA: 4.20 / 4.30.
+            Rank in class: 3 / 258.
+            Rank in department: 1 / 90.
+            College of Engineering Dean’s List in multiple semesters (≈ top 3% recommended by department leadership).
+          </div>
+        </div>
+      </section>
+
+      <section id="experience" class="section-block">
+        <h2>Experience</h2>
+
+        <!-- CASL -->
+        <div class="item">
+          <div class="item-head">
+            <div class="item-title">
+              Computer Architecture and Systems Laboratory, KAIST — Undergraduate Student Intern
+            </div>
+            <div class="item-date">Feb 2024 – Jun 2024 · Daejeon, South Korea</div>
+          </div>
+          <div class="item-desc">
+            Worked on efficient LLM serving, including speculative decoding and throughput/latency trade-offs in vLLM-style inference setups.
+            Designed an algorithm to choose draft token counts for speculative decoding to improve serving efficiency.
+          </div>
+        </div>
+
+        <!-- CPS URP -->
+        <div class="item">
+          <div class="item-head">
+            <div class="item-title">Cyber-Physical Systems Laboratory, KAIST — Undergraduate Research Participation</div>
+            <div class="item-date">Jun 2023 – Feb 2024 · Daejeon, South Korea</div>
+          </div>
+          <div class="item-desc">
+            Built an AI-based UI Detection and Distribution system:
+            • Trained and deployed real-time UI element detectors.
+            • Built the extraction pipeline (vision inference → lightweight server via multiprocessing/sockets in Python → downstream delivery).
+            • Optimized runtime behavior.
+          </div>
+        </div>
+
+        <!-- CPS Intern -->
+        <div class="item">
+          <div class="item-head">
+            <div class="item-title">Cyber-Physical Systems Laboratory, KAIST — Undergraduate Student Intern</div>
+            <div class="item-date">Dec 2022 – Jun 2023 · Daejeon, South Korea</div>
+          </div>
+          <div class="item-desc">
+            Extended a UI offloading / distribution system inspired by FLUID-XP.
+            • Studied an Android OS variant for UI streaming.
+            • Built a cross-platform client in Flutter.
+            • Implemented peer-to-peer connectivity (Wi‑Fi Direct, Bluetooth discovery).
+          </div>
+        </div>
+
+        <!-- CPL Individual Study -->
+        <div class="item">
+          <div class="item-head">
+            <div class="item-title">Concurrency and Parallelism Laboratory, KAIST — Individual Study Student</div>
+            <div class="item-date">Dec 2021 – Jun 2022 · Daejeon, South Korea</div>
+          </div>
+          <div class="item-desc">
+            Studied persistent memory models, concurrent data structures, and file systems.
+            Implemented a log-structured file system for rv6 (an xv6-style OS in Rust) to explore concurrency and durability behavior.
+          </div>
+        </div>
+
+        <!-- SCB -->
+        <div class="item">
+          <div class="item-head">
+            <div class="item-title">Siam Commercial Bank — Data Science Intern (Data Analytics Function)</div>
+            <div class="item-date">Jun 2023 – Aug 2023 · Bangkok, Thailand</div>
+          </div>
+          <div class="item-desc">
+            Built a multi-task neural network model for conversion rate estimation with a causal debiasing objective.
+            Designed data prep / feature pipelines for large-scale model training using Apache Spark and Azure Databricks.
+          </div>
+        </div>
+
+        <!-- Rayong -->
+        <div class="item">
+          <div class="item-head">
+            <div class="item-title">Rayong Engineering and Plant Service Co., Ltd. — Student Intern</div>
+            <div class="item-date">Jun 2022 – Aug 2022 · Rayong, Thailand</div>
+          </div>
+          <div class="item-desc">
+            Developed a machine vision “Pellet Analyzer” for plastic manufacturing quality control:
+            • Collected and labeled production images.
+            • Trained an object detection model.
+            • Shipped an interface for operators on the line.
+          </div>
+        </div>
+      </section>
+
+      <section id="pubs" class="section-block">
+        <h2>Publications</h2>
+
+        <div class="item">
+          <div class="item-head">
+            <div class="item-title">Batch Query Processing and Optimization for Agentic Workflows</div>
+            <div class="item-date">arXiv / 2025</div>
+          </div>
+          <div class="item-desc">
+            J Shen, <strong>N&nbsp;Wadlom</strong>, Y Lu.
+            <a href="https://arxiv.org/abs/2509.02121" target="_blank" rel="noopener">arXiv:2509.02121</a>
+          </div>
+        </div>
+        <div class="item">
+          <div class="item-head">
+            <div class="item-title">mCardiacDx: Radar-Driven Contactless Monitoring and Diagnosis of Arrhythmia</div>
+            <div class="item-date">arXiv / 2025</div>
+          </div>
+          <div class="item-desc">
+            A Kumar, <strong>N&nbsp;Wadlom</strong>, J Kwak, SH Kang, I Shin.
+            <a href="https://arxiv.org/abs/2508.02274" target="_blank" rel="noopener">arXiv:2508.02274</a>
+          </div>
+        </div>
+        <div class="item">
+          <div class="item-head">
+            <div class="item-title">Glioma Brain Tumor Classification using Transfer Learning</div>
+            <div class="item-date">10th Int'l Conf. on Engineering, Applied Sciences / 2024</div>
+          </div>
+          <div class="item-desc">
+            P Pilaoon, A Narkthewan, <strong>N&nbsp;Wadlom</strong>, R Varakulsiripunth, K Hamamoto, ...
+          </div>
+        </div>
+      </section>
+
+      <section id="awards" class="section-block">
+        <h2>Awards &amp; Honors</h2>
+
+        <div class="item">
+          <div class="item-head">
+            <div class="item-title">
+              President’s Graduate Fellowship — National University of Singapore
+            </div>
+            <div class="item-date">2024</div>
+          </div>
+          <div class="item-desc">
+            Competitive fellowship awarded to top Ph.D. students showing
+            exceptional research potential. Covers full tuition and stipend at
+            NUS.
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="item-head">
+            <div class="item-title">
+              College of Engineering Dean’s List — KAIST
+            </div>
+            <div class="item-date">
+              Fall 2021, Fall 2022, Spring 2023, Fall 2023, Spring 2024
+            </div>
+          </div>
+          <div class="item-desc">
+            Awarded to top-performing students (~top 3%) nominated by the
+            department.
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="item-head">
+            <div class="item-title">KAIplus+ Scholarship — KAIplus</div>
+            <div class="item-date">2022</div>
+          </div>
+          <div class="item-desc">
+            Merit scholarship awarded to a small number of international KAIST
+            students each semester.
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="item-head">
+            <div class="item-title">
+              Honorable Mention — International Mathematical Modeling Challenge
+            </div>
+            <div class="item-date">2019</div>
+          </div>
+          <div class="item-desc">
+            National team recognition for high-quality applied mathematical
+            modeling work.
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="section-block">
+        <h2>Skills</h2>
+
+        <!-- Programming -->
+        <div class="item">
+          <div class="item-head">
+            <div class="item-title">Programming</div>
+            <div class="item-date"></div>
+          </div>
+          <div class="item-desc">
+            Advanced: Python
+            Intermediate: C, Java, Dart
+            Beginner: C++, Rust, Scala, JavaScript
+          </div>
+        </div>
+
+        <!-- ML/Data/Systems -->
+        <div class="item">
+          <div class="item-head">
+            <div class="item-title">ML / Data / Systems</div>
+            <div class="item-date"></div>
+          </div>
+          <div class="item-desc">
+            PyTorch, TensorFlow, Keras, scikit-learn, Pandas, NumPy, Spark ML
+            Apache Spark, Azure Databricks, MySQL
+            LLM serving efficiency, batching/scheduling, speculative decoding
+            Flutter app dev, Android (Android Studio), Flask
+            Git (GitHub/GitLab); macOS / Windows / Ubuntu Server
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="item-head">
+            <div class="item-title">Languages</div>
+            <div class="item-date"></div>
+          </div>
+          <div class="item-desc">
+            Thai (native), English (fluent), Korean (beginner)
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section-block">
+        <h2>Contact</h2>
+        <p>
+          Email:
+          <a href="mailto:noppanat@comp.nus.edu.sg">noppanat@comp.nus.edu.sg</a>
+          or
+          <a href="mailto:noppanat@u.nus.edu">noppanat@u.nus.edu</a>
+        </p>
+        <ul class="contact-list">
+          <li>
+            <a
+              href="https://www.linkedin.com/in/noppanat-wadlom/"
+              target="_blank"
+              rel="noopener"
+              >LinkedIn</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://scholar.google.com/citations?user=xBf0ehQAAAAJ&hl=en"
+              target="_blank"
+              rel="noopener"
+              >Google Scholar</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://github.com/kaiitunnz"
+              target="_blank"
+              rel="noopener"
+              >GitHub (@kaiitunnz)</a
+            >
+          </li>
+          <!-- <li><a href="assets/cv.pdf" target="_blank" rel="noopener">CV (PDF)</a></li> -->
+        </ul>
+        <p style="color: #94a3b8; font-size: 0.8rem; margin-top: 1rem">
+          Based in Singapore and Thailand. Phone: (+65) 8098 6325.
+        </p>
+      </section>
+
+      <footer class="footer">
+        <p>© <span id="year"></span> Noppanat Wadlom. All rights reserved.</p>
+      </footer>
+    </main>
+
+    <script>
+      // Year in footer
+      const y = document.getElementById("year");
+      if (y) {
+        y.textContent = new Date().getFullYear();
+      }
+
+      // Theme initialization and toggle
+      const root = document.documentElement;
+      const storedTheme = localStorage.getItem("theme");
+      const prefersLight =
+        window.matchMedia &&
+        window.matchMedia("(prefers-color-scheme: light)").matches;
+      const initialTheme = storedTheme || (prefersLight ? "light" : "dark");
+      root.setAttribute("data-theme", initialTheme);
+
+      const toggleBtn = document.getElementById("theme-toggle");
+      const syncToggleState = () => {
+        if (!toggleBtn) return;
+        const isLight = root.getAttribute("data-theme") === "light";
+        toggleBtn.setAttribute("aria-pressed", String(isLight));
+        toggleBtn.title = isLight
+          ? "Switch to dark theme"
+          : "Switch to light theme";
+      };
+      syncToggleState();
+
+      if (toggleBtn) {
+        toggleBtn.addEventListener("click", () => {
+          const current = root.getAttribute("data-theme") || initialTheme;
+          const next = current === "light" ? "dark" : "light";
+          root.setAttribute("data-theme", next);
+          localStorage.setItem("theme", next);
+          syncToggleState();
+        });
+      }
+    </script>
+  </body>
+</html>
