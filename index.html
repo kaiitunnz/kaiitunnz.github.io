@@ -412,6 +412,21 @@
           syncToggleState();
         });
       }
+
+      // Shrink header on scroll
+      const header = document.querySelector('.site-header');
+      const shrinkThreshold = 12; // px from top before shrinking
+      let isShrunk = false;
+      const onScroll = () => {
+        const shouldShrink = window.scrollY > shrinkThreshold;
+        if (shouldShrink !== isShrunk && header) {
+          header.classList.toggle('shrink', shouldShrink);
+          isShrunk = shouldShrink;
+        }
+      };
+      window.addEventListener('scroll', onScroll, { passive: true });
+      // Run once on load in case of deep-link
+      onScroll();
     </script>
   </body>
 </html>
