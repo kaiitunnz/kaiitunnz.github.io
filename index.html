@@ -15,38 +15,18 @@
   <body>
     <header class="site-header">
       <div class="container header-content">
-        <!-- Replace intro block: add avatar and wrap text -->
-        <div class="intro">
-          <img
-            class="avatar"
-            src="assets/profile.jpg"
-            alt="Portrait of Noppanat Wadlom"
-            width="72"
-            height="72"
-            loading="eager"
-          />
-          <div>
-            <h1 class="name">Noppanat Wadlom</h1>
-            <p class="tagline">
-              Ph.D. Candidate · Computer Science · National University of
-              Singapore<br />
-              Machine Learning Systems · Big Data Systems · Agentic AI
-            </p>
-          </div>
-        </div>
-
-        <!-- Group nav and theme toggle -->
-        <div class="tools">
-          <nav class="nav" aria-label="Primary">
-            <a href="#about">About</a>
-            <a href="#education">Education</a>
-            <a href="#experience">Experience</a>
-            <a href="#pubs">Publications</a>
-            <a href="#awards">Awards</a>
-            <a href="#teaching">Teaching</a>
-            <a href="#skills">Skills</a>
-            <a href="#contact">Contact</a>
-          </nav>
+        <a href="#" class="header-logo">NW</a>
+        <nav class="nav" id="nav" aria-label="Primary">
+          <a href="#about">About</a>
+          <a href="#education">Education</a>
+          <a href="#experience">Experience</a>
+          <a href="#pubs">Publications</a>
+          <a href="#awards">Awards</a>
+          <a href="#teaching">Teaching</a>
+          <a href="#skills">Skills</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <div class="header-actions">
           <button
             id="theme-toggle"
             class="theme-toggle"
@@ -58,24 +38,75 @@
             <span class="icon-sun" aria-hidden="true">☀️</span>
             <span class="icon-moon" aria-hidden="true">🌙</span>
           </button>
+          <button
+            class="hamburger"
+            id="hamburger"
+            type="button"
+            aria-label="Toggle menu"
+            aria-expanded="false"
+          >
+            <span></span><span></span><span></span>
+          </button>
         </div>
       </div>
     </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container hero-content">
+        <img
+          class="avatar"
+          src="assets/profile.jpg"
+          alt="Portrait of Noppanat Wadlom"
+          width="120"
+          height="120"
+          loading="eager"
+        />
+        <div class="hero-text">
+          <h1 class="name">Noppanat Wadlom</h1>
+          <p class="tagline">
+            Ph.D. Candidate in Computer Science at the
+            <span class="highlight">National University of Singapore</span>
+          </p>
+          <p class="tagline-sub">
+            Machine Learning Systems · Big Data Systems · Agentic AI
+          </p>
+          <div class="hero-links">
+            <a href="mailto:noppanat@comp.nus.edu.sg" class="hero-link">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+              Email
+            </a>
+            <a href="https://scholar.google.com/citations?user=xBf0ehQAAAAJ&hl=en" target="_blank" rel="noopener" class="hero-link">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M5.242 13.769 0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269zM12 10a7 7 0 1 0 0 14 7 7 0 0 0 0-14z"/></svg>
+              Scholar
+            </a>
+            <a href="https://github.com/kaiitunnz" target="_blank" rel="noopener" class="hero-link">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+              GitHub
+            </a>
+            <a href="https://www.linkedin.com/in/noppanat-wadlom/" target="_blank" rel="noopener" class="hero-link">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+              LinkedIn
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <main class="container main-content">
       <section id="about" class="section-block">
         <h2>About</h2>
         <p>
           I am a Ph.D. Candidate in Computer Science at the National University of
-          Singapore (NUS), supported by the President’s Graduate Fellowship. My
+          Singapore (NUS), supported by the President's Graduate Fellowship. My
           research interests include machine learning systems, big data systems,
           and agentic AI, with a focus on how to execute complex multi-step /
           multi-agent LLM workflows efficiently on modern hardware.
         </p>
         <p>
           Before NUS, I completed a B.Sc. in Computer Science (double major in
-          Electrical Engineering) at KAIST with a 4.20/4.30 GPA. My applied work 
-          also includes causal modeling for banking analytics and production ML 
+          Electrical Engineering) at KAIST with a 4.20/4.30 GPA. My applied work
+          also includes causal modeling for banking analytics and production ML
           pipelines.
         </p>
       </section>
@@ -83,7 +114,6 @@
       <section id="education" class="section-block">
         <h2>Education</h2>
 
-        <!-- NUS -->
         <div class="item">
           <div class="item-head">
             <div class="item-title">
@@ -93,12 +123,11 @@
           </div>
           <div class="item-desc">
             Ph.D. in Computer Science.
-            President’s Graduate Fellowship (full support for exceptional research promise).
+            President's Graduate Fellowship (full support for exceptional research promise).
             Research focus: high-throughput LLM serving, workflow-aware scheduling, cache reuse across agentic steps.
           </div>
         </div>
 
-        <!-- KAIST BSc -->
         <div class="item">
           <div class="item-head">
             <div class="item-title">
@@ -109,10 +138,12 @@
           <div class="item-desc">
             B.Sc. in Computer Science with a double major in Electrical Engineering.
             Semiminor in Artificial Intelligence.
-            GPA: 4.20 / 4.30.
-            Rank in class: 3 / 258.
-            Rank in department: 1 / 90.
-            College of Engineering Dean’s List in multiple semesters (≈ top 3% recommended by department leadership).
+          </div>
+          <div class="stat-chips">
+            <span class="stat-chip"><span class="stat-num">4.20</span><span class="stat-label">/ 4.30 GPA</span></span>
+            <span class="stat-chip"><span class="stat-num">#1</span><span class="stat-label">/ 90 in dept.</span></span>
+            <span class="stat-chip"><span class="stat-num">#3</span><span class="stat-label">/ 258 in class</span></span>
+            <span class="stat-chip">Dean's List (5 semesters)</span>
           </div>
         </div>
       </section>
@@ -120,7 +151,6 @@
       <section id="experience" class="section-block">
         <h2>Experience</h2>
 
-        <!-- CASL -->
         <div class="item">
           <div class="item-head">
             <div class="item-title">
@@ -134,7 +164,6 @@
           </div>
         </div>
 
-        <!-- CPS URP -->
         <div class="item">
           <div class="item-head">
             <div class="item-title">Cyber-Physical Systems Laboratory, KAIST — Undergraduate Research Participation</div>
@@ -148,7 +177,6 @@
           </div>
         </div>
 
-        <!-- CPS Intern -->
         <div class="item">
           <div class="item-head">
             <div class="item-title">Cyber-Physical Systems Laboratory, KAIST — Undergraduate Student Intern</div>
@@ -162,7 +190,6 @@
           </div>
         </div>
 
-        <!-- CPL Individual Study -->
         <div class="item">
           <div class="item-head">
             <div class="item-title">Concurrency and Parallelism Laboratory, KAIST — Individual Study Student</div>
@@ -174,7 +201,6 @@
           </div>
         </div>
 
-        <!-- SCB -->
         <div class="item">
           <div class="item-head">
             <div class="item-title">Siam Commercial Bank — Data Science Intern (Data Analytics Function)</div>
@@ -186,14 +212,13 @@
           </div>
         </div>
 
-        <!-- Rayong -->
         <div class="item">
           <div class="item-head">
             <div class="item-title">Rayong Engineering and Plant Service Co., Ltd. — Student Intern</div>
             <div class="item-date">Jun 2022 – Aug 2022 · Rayong, Thailand</div>
           </div>
           <div class="item-desc">
-            Developed a machine vision “Pellet Analyzer” for plastic manufacturing quality control:
+            Developed a machine vision "Pellet Analyzer" for plastic manufacturing quality control:
             • Collected and labeled production images.
             • Trained an object detection model.
             • Shipped an interface for operators on the line.
@@ -204,7 +229,7 @@
       <section id="pubs" class="section-block">
         <h2>Publications</h2>
 
-        <div class="item">
+        <div class="item pub-item">
           <div class="item-head">
             <div class="item-title">Efficient LLM Serving for Agentic Workflows: A Data Systems Perspective</div>
             <div class="item-date" data-venue="conf">SIGMOD 2026</div>
@@ -214,27 +239,7 @@
             Proc. ACM Manag. Data 4, 3, Article 169 (June 2026). <a href="https://doi.org/10.1145/3802046" target="_blank" rel="noopener">DOI (to appear)</a>
           </div>
         </div>
-        <div class="item">
-          <div class="item-head">
-            <div class="item-title">FlowMesh: A Service Fabric for Composable LLM Workflows</div>
-            <div class="item-date">arXiv 2025</div>
-          </div>
-          <div class="item-desc">
-            J Shen, <strong>N&nbsp;Wadlom</strong>, L Zhou, D Wang, X Miao, L Fang, Y Lu.
-            <a href="https://arxiv.org/abs/2510.26913" target="_blank" rel="noopener">arXiv:2510.26913</a>
-          </div>
-        </div>
-        <div class="item">
-          <div class="item-head">
-            <div class="item-title">Batch Query Processing and Optimization for Agentic Workflows</div>
-            <div class="item-date">arXiv 2025</div>
-          </div>
-          <div class="item-desc">
-            J Shen, <strong>N&nbsp;Wadlom</strong>, Y Lu.
-            <a href="https://arxiv.org/abs/2509.02121" target="_blank" rel="noopener">arXiv:2509.02121</a>
-          </div>
-        </div>
-        <div class="item">
+        <div class="item pub-item">
           <div class="item-head">
             <div class="item-title">mCardiacDx: Radar-Driven Contactless Monitoring and Diagnosis of Arrhythmia</div>
             <div class="item-date" data-venue="conf">IEEE JTEHM 2026</div>
@@ -244,7 +249,27 @@
             <a href="https://arxiv.org/abs/2508.02274" target="_blank" rel="noopener">arXiv:2508.02274</a> · <a href="https://doi.org/10.1109/JTEHM.2026.3670383" target="_blank" rel="noopener">DOI</a>
           </div>
         </div>
-        <div class="item">
+        <div class="item pub-item">
+          <div class="item-head">
+            <div class="item-title">FlowMesh: A Service Fabric for Composable LLM Workflows</div>
+            <div class="item-date">arXiv 2025</div>
+          </div>
+          <div class="item-desc">
+            J Shen, <strong>N&nbsp;Wadlom</strong>, L Zhou, D Wang, X Miao, L Fang, Y Lu.
+            <a href="https://arxiv.org/abs/2510.26913" target="_blank" rel="noopener">arXiv:2510.26913</a>
+          </div>
+        </div>
+        <div class="item pub-item">
+          <div class="item-head">
+            <div class="item-title">Batch Query Processing and Optimization for Agentic Workflows</div>
+            <div class="item-date">arXiv 2025</div>
+          </div>
+          <div class="item-desc">
+            J Shen, <strong>N&nbsp;Wadlom</strong>, Y Lu.
+            <a href="https://arxiv.org/abs/2509.02121" target="_blank" rel="noopener">arXiv:2509.02121</a>
+          </div>
+        </div>
+        <div class="item pub-item">
           <div class="item-head">
             <div class="item-title">Glioma Brain Tumor Classification using Transfer Learning</div>
             <div class="item-date" data-venue="conf">ICEAST 2024</div>
@@ -261,7 +286,7 @@
         <div class="item">
           <div class="item-head">
             <div class="item-title">
-              President’s Graduate Fellowship — National University of Singapore
+              President's Graduate Fellowship — National University of Singapore
             </div>
             <div class="item-date">2024</div>
           </div>
@@ -275,7 +300,7 @@
         <div class="item">
           <div class="item-head">
             <div class="item-title">
-              College of Engineering Dean’s List — KAIST
+              College of Engineering Dean's List — KAIST
             </div>
             <div class="item-date">
               Fall 2021, Fall 2022, Spring 2023, Fall 2023, Spring 2024
@@ -414,13 +439,13 @@
             GitHub
           </a>
         </div>
-        <p style="color: #94a3b8; font-size: 0.8rem; margin-top: 1rem">
+        <p style="color: var(--text-dim); font-size: 0.8rem; margin-top: 1rem">
           Based in Singapore and Thailand. Phone: (+65) 8098 6325.
         </p>
       </section>
 
       <footer class="footer">
-        <p>© <span id="year"></span> Noppanat Wadlom. All rights reserved.</p>
+        <p>&copy; <span id="year"></span> Noppanat Wadlom. All rights reserved.</p>
       </footer>
     </main>
 
@@ -431,9 +456,7 @@
     <script>
       // Year in footer
       const y = document.getElementById("year");
-      if (y) {
-        y.textContent = new Date().getFullYear();
-      }
+      if (y) y.textContent = new Date().getFullYear();
 
       // Theme initialization and toggle
       const root = document.documentElement;
@@ -465,19 +488,30 @@
         });
       }
 
-      // Shrink header on scroll + back-to-top visibility
-      const header = document.querySelector('.site-header');
+      // Hamburger menu
+      const hamburger = document.getElementById('hamburger');
+      const nav = document.getElementById('nav');
+      if (hamburger && nav) {
+        hamburger.addEventListener('click', () => {
+          const isOpen = nav.classList.toggle('open');
+          hamburger.classList.toggle('open', isOpen);
+          hamburger.setAttribute('aria-expanded', String(isOpen));
+        });
+        // Close menu when clicking a nav link
+        nav.querySelectorAll('a').forEach(link => {
+          link.addEventListener('click', () => {
+            nav.classList.remove('open');
+            hamburger.classList.remove('open');
+            hamburger.setAttribute('aria-expanded', 'false');
+          });
+        });
+      }
+
       const backToTop = document.getElementById('back-to-top');
-      const shrinkThreshold = 12;
-      let isShrunk = false;
       let isTopVisible = false;
+
       const onScroll = () => {
         const scrollY = window.scrollY;
-        const shouldShrink = scrollY > shrinkThreshold;
-        if (shouldShrink !== isShrunk && header) {
-          header.classList.toggle('shrink', shouldShrink);
-          isShrunk = shouldShrink;
-        }
         const shouldShowTop = scrollY > 400;
         if (shouldShowTop !== isTopVisible && backToTop) {
           backToTop.classList.toggle('visible', shouldShowTop);
@@ -489,7 +523,7 @@
 
       if (backToTop) {
         backToTop.addEventListener('click', () => {
-          window.scrollTo({ top: 0 });
+          window.scrollTo({ top: 0, behavior: 'smooth' });
         });
       }
 
@@ -506,13 +540,19 @@
       }, { rootMargin: '-20% 0px -60% 0px', threshold: 0 });
       sections.forEach((s) => navObserver.observe(s));
 
-      // Scroll-reveal animations
+      // Scroll-reveal animations with stagger
       const revealSections = document.querySelectorAll('.section-block');
       revealSections.forEach((s) => s.classList.add('reveal'));
       const revealObserver = new IntersectionObserver((entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
             entry.target.classList.add('visible');
+            // Stagger child items
+            const items = entry.target.querySelectorAll('.item, .skills-group');
+            items.forEach((item, i) => {
+              item.style.transitionDelay = (i * 60) + 'ms';
+              item.classList.add('item-visible');
+            });
             revealObserver.unobserve(entry.target);
           }
         });
