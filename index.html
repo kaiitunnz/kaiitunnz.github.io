@@ -536,6 +536,7 @@
         // Highlight the section(s) whose row sits under the reading line. Paired cards share a row, so
         // both of their links light up; at the bottom of the page the last row wins.
         const nav = document.querySelector(".nav");
+        const calm = matchMedia("(prefers-reduced-motion: reduce)");
         const links = [...nav.querySelectorAll("a")];
         const sections = [...document.querySelectorAll(".sec[id]")];
         let current = "";
@@ -552,7 +553,7 @@
           if (first && first.hash !== current) {
             current = first.hash;
             if (nav.scrollWidth > nav.clientWidth)
-              nav.scrollTo({ left: first.offsetLeft - 8, behavior: "smooth" });
+              nav.scrollTo({ left: first.offsetLeft - 8, behavior: calm.matches ? "auto" : "smooth" });
           }
         };
 
